@@ -14,8 +14,8 @@ export function HeroSection() {
               Shreyas
             </span>
             , a passionate{" "}
-            <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block">
-              Full Stack Developer
+            <span className="bg-[#2F81F7] sm:text-[48px] text-white px-3 py-1 inline-block">
+              Software Developer
             </span>
           </h1>
 
