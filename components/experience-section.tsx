@@ -1,17 +1,15 @@
 // experience-section.tsx
 import { FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export function ExperienceSection() {
   const experiences = [
     {
-      period: "2024 - Present",
+      period: "May 2024 - Aug 2024",
       title: "UI/UX Designer Intern",
       company: "Quetraware Technology",
       description:
         "Developed responsive component-driven front-end interfaces using modern JavaScript frameworks. Collaborated with backend engineers to integrate APIs and services. Reduced design-to-development handoff time by 20% through standardized components and Git-based workflows.",
-      icon: "/images/agency.png",
     },
   ];
 
@@ -33,7 +31,13 @@ export function ExperienceSection() {
             </p>
             <Button className="bg-white text-black hover:bg-gray-50 rounded-lg py-5 px-8 md:py-22px md:px-62px text-base md:text-lg font-semibold h-auto w-full sm:w-auto sm:min-w-240px">
               <FileText className="w-5 h-5" />
-              See full resume
+              <a
+                href="https://drive.google.com/drive/folders/16XM_kX4lLqWw5KdUTXwLIIzPvIySpHFz?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                See full resume
+              </a>
             </Button>
           </div>
 
@@ -46,16 +50,7 @@ export function ExperienceSection() {
                 <div className="flex items-center justify-between mb-4 md:mb-6 pt-6 md:pt-8 px-6 md:px-8">
                   <div className="text-base md:text-[22px] leading-tight md:leading-34px font-bold text-[#0B0B0B]">
                     {exp.period}
-                  </div>
-                  <div className="rounded-full border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                    <Image
-                      src={exp.icon || "/placeholder.svg"}
-                      alt={exp.title}
-                      width={48}
-                      height={48}
-                      className="w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-full"
-                    />
-                  </div>
+                  </div>{" "}
                 </div>
 
                 <div className="border-t-[3px] border-black mb-4 md:mb-6"></div>

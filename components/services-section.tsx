@@ -2,6 +2,7 @@
 import { Mail, Code, Palette, Database, Cloud, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { SiLinkedin } from "react-icons/si";
 
 export function ServicesSection() {
   const services = [
@@ -74,7 +75,7 @@ export function ServicesSection() {
 
             <div className="bg-[#FFC224] border-[3px] border-black rounded-2xl p-8 md:p-12 flex flex-col items-center justify-center text-center hover:translate-y--4px transition-transform min-h-480px relative shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
               <div className="mb-8">
-                <Mail className="w-20 h-20" />
+                <SiLinkedin className="w-20 h-20" />
               </div>
               <h3 className="text-[28px] leading-40px font-bold mb-4 text-[#0B0B0B]">
                 Get in touch
@@ -84,8 +85,13 @@ export function ServicesSection() {
                 I can help bring your ideas to life.
               </p>
               <Button className="bg-black text-white hover:bg-black/90 rounded-2xl px-12 py-6 font-medium text-[18px] w-full max-w-340px h-64px">
-                <Mail className="w-5 h-5 mr-2" />
-                Contact me
+                <a
+                  href="https://www.linkedin.com/in/shreyas-dhekane/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact me
+                </a>
               </Button>
             </div>
           </div>

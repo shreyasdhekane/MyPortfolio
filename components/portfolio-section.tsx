@@ -1,6 +1,5 @@
 // portfolio-section.tsx
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 
 export function PortfolioSection() {
   const projects = [
@@ -12,7 +11,7 @@ export function PortfolioSection() {
       logo: "/images/studio-logo.svg",
       bgColor: "bg-[#6366F1]",
       illustration: "/images/studio-workspace.svg",
-      link: "#",
+      link: "https://trackadmit.vercel.app",
     },
     {
       title: "Collaborix - Real-time Collaboration",
@@ -22,7 +21,7 @@ export function PortfolioSection() {
       logo: "/images/venture-logo.svg",
       bgColor: "bg-[#2F81F7]",
       illustration: "/images/venture-workspace.svg",
-      link: "#",
+      link: "https://collabrix-one.vercel.app",
     },
     {
       title: "Customer Dashboard Modernization",
@@ -37,7 +36,10 @@ export function PortfolioSection() {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-16 md:py-24">
+    <section
+      id="portfolio-section"
+      className="container mx-auto px-4 py-16 md:py-24"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -71,7 +73,7 @@ export function PortfolioSection() {
                   href={project.link}
                   className="flex items-center gap-2 font-semibold text-[#0B0B0B] hover:gap-3 transition-all text-sm md:text-base"
                 >
-                  View case study
+                  View Site
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
@@ -89,20 +91,13 @@ export function PortfolioSection() {
 
         <div className="flex justify-center">
           <button className="bg-black text-white px-6 md:px-8 py-4 md:py-5 rounded-[12px] font-semibold hover:bg-gray-900 transition-colors flex items-center justify-center gap-2 w-full sm:w-auto text-sm md:text-base">
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+            <a
+              href="https://github.com/shreyasdhekane?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
-            Browse all projects
+              Browse all projects
+            </a>
           </button>
         </div>
       </div>

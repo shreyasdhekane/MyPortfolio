@@ -5,7 +5,10 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="container mx-auto px-4 py-16 md:py-24">
+    <section
+      id="hero-section"
+      className="container mx-auto px-4 py-16 md:py-24"
+    >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
           <h1 className="text-[42px] leading-12.5 md:text-[72px] font-bold md:leading-21.25">
@@ -42,9 +45,32 @@ export function HeroSection() {
         </div>
 
         <div className="flex justify-center md:justify-end">
-          <div className="relative w-full max-w-md aspect-square bg-[#FDB927] border-4 border-black rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <div className="w-full h-full flex items-center justify-center bg-linear-to-br from-[#2F81F7] to-[#FF6B7A] text-white text-8xl font-bold">
-              SD
+          <div className="relative w-full max-w-md aspect-square">
+            {/* Scribble frame */}
+            <svg
+              className="absolute -inset-4 w-[calc(100%+2rem)] h-[calc(100%+2rem)] -z-10"
+              viewBox="0 0 400 400"
+            >
+              <path
+                d="M20,20 Q80,0 140,20 T260,20 T340,40 T380,120 T360,220 T380,300 T320,360 T220,380 T100,360 T20,280 T40,160 T20,20"
+                fill="none"
+                stroke="black"
+                strokeWidth="4"
+                strokeLinecap="round"
+                className="opacity-50"
+                strokeDasharray="8 8"
+              />
+            </svg>
+            <div className="relative w-full h-full bg-[#FDB927] border-4 border-black rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <div className="w-full h-full flex items-center justify-center bg-linear-to-br from-[#2F81F7] to-[#FF6B7A] text-white text-8xl font-bold relative">
+                SD
+                <span className="absolute top-4 right-8 text-4xl transform rotate-12">
+                  ✧
+                </span>
+                <span className="absolute bottom-8 left-4 text-3xl transform -rotate-12">
+                  ✧
+                </span>
+              </div>
             </div>
           </div>
         </div>

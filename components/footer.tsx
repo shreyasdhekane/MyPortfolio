@@ -9,13 +9,10 @@ import {
   Phone,
   Github,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white py-12 md:py-16">
+    <footer id="contact-section" className="bg-black text-white py-12 md:py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
@@ -34,22 +31,16 @@ export function Footer() {
               </p>
               <div className="flex gap-3">
                 <a
-                  href="#"
+                  href="https://github.com/shreyasdhekane"
                   className="w-10 h-10 bg-[#2F81F7] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
                 >
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/shreyasdhekane/"
                   className="w-10 h-10 bg-[#2F81F7] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
                 >
                   <Linkedin className="w-5 h-5" />
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-[#FF6B7A] rounded-full flex items-center justify-center hover:opacity-80 transition-opacity"
-                >
-                  <Twitter className="w-5 h-5" />
                 </a>
               </div>
             </div>
@@ -84,23 +75,19 @@ export function Footer() {
               <h3 className="font-bold mb-4">Resources</h3>
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="https://drive.google.com/drive/folders/16XM_kX4lLqWw5KdUTXwLIIzPvIySpHFz?usp=drive_link"
+                    className="hover:text-white transition-colors"
+                  >
                     Resume
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Certifications
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="https://github.com/shreyasdhekane"
+                    className="hover:text-white transition-colors"
+                  >
                     GitHub
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Blog
                   </a>
                 </li>
               </ul>
@@ -112,19 +99,28 @@ export function Footer() {
                 <li className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
                   <a
-                    href="mailto:shreyas.dhekane@example.com"
+                    href="mailto:dhekaneshreyas@gmail.com"
                     className="hover:text-white transition-colors"
                   >
-                    shreyas.dhekane@example.com
+                    dhekaneshreyas@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+18129292319"
                     className="hover:text-white transition-colors"
                   >
-                    +1 (234) 567-890
+                    +1 (812) 929-2319
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Linkedin className="w-4 h-4" />
+                  <a
+                    href="https://www.linkedin.com/in/shreyasdhekane/"
+                    className="hover:text-white transition-colors"
+                  >
+                    linkedin.com/in/shreyasdhekane
                   </a>
                 </li>
               </ul>
