@@ -1,14 +1,5 @@
 // footer.tsx
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Youtube,
-  Linkedin,
-  Mail,
-  Phone,
-  Github,
-} from "lucide-react";
+import { Linkedin, Mail, Phone, Github } from "lucide-react";
 
 export function Footer() {
   return (
