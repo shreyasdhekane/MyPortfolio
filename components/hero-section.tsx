@@ -62,15 +62,19 @@ export function HeroSection() {
               />
             </svg>
             <div className="relative w-full h-full bg-[#FDB927] border-4 border-black rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <div className="w-full h-full flex items-center justify-center bg-linear-to-br from-[#2F81F7] to-[#FF6B7A] text-white text-8xl font-bold relative">
-                SD
-                <span className="absolute top-4 right-8 text-4xl transform rotate-12">
-                  ✧
-                </span>
-                <span className="absolute bottom-8 left-4 text-3xl transform -rotate-12">
-                  ✧
-                </span>
-              </div>
+              <img
+                src="/Personal.png"
+                alt="Personal"
+                className="w-full h-full object-cover"
+              />
+
+              {/* Decorative sparkles (optional) */}
+              <span className="absolute top-4 right-8 text-4xl rotate-12">
+                ✧
+              </span>
+              <span className="absolute bottom-8 left-4 text-3xl -rotate-12">
+                ✧
+              </span>
             </div>
           </div>
         </div>
