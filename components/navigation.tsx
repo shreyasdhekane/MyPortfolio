@@ -44,11 +44,17 @@ export function Navigation() {
         </div>
 
         <Button
-          onClick={() => scrollToSection("contact-section")}
+          asChild
           className="bg-black text-white hover:bg-black/90 rounded-sm px-5 h-12 min-w-48px shrink-0"
         >
-          <span className="hidden sm:inline-block mr-2">Contact</span>
-          <Mail className="w-10 h-10" strokeWidth={2.5} />
+          <a
+            href="https://www.linkedin.com/messaging/compose/?recipient=shreyasdhekane"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="hidden sm:inline-block mr-2">Contact</span>
+            <Mail className="w-10 h-10" strokeWidth={2.5} />
+          </a>
         </Button>
       </nav>
     </div>
