@@ -62,19 +62,13 @@ export function HeroSection() {
               />
             </svg>
             <div className="relative w-full h-full bg-[#FDB927] border-4 border-black rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <img
-                src="/Personal.png"
-                alt="Personal"
-                className="w-full h-full object-cover"
-              />
-
-              {/* Decorative sparkles (optional) */}
-              <span className="absolute top-4 right-8 text-4xl rotate-12">
-                ✧
-              </span>
-              <span className="absolute bottom-8 left-4 text-3xl -rotate-12">
-                ✧
-              </span>
+              <div className="relative w-full max-w-lg aspect-square border-4 border-black rounded-3xl overflow-hidden shadow-[-8px_8px_0px_0px_rgba(0,0,0,1)]">
+                <img
+                  src="/Personal.png"
+                  alt="Shreyas Dhekane"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
