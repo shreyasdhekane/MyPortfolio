@@ -1,7 +1,5 @@
-// hero-section.tsx
-import { Mail, FolderOpen } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+"use client";
+import Typewriter from "typewriter-effect";
 
 export function HeroSection() {
   return (
@@ -11,16 +9,38 @@ export function HeroSection() {
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <h1 className="text-[42px] leading-12.5 md:text-[72px] font-bold md:leading-21.25">
+          {/* Open to Work Badge */}
+          <div className="inline-flex items-center gap-2 bg-white border-[3px] border-black rounded-full px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+            <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse shrink-0" />
+            <span className="text-sm font-bold text-[#0B0B0B]">
+              Open to Summer 2026 Internships & Co-op
+            </span>
+          </div>
+          <h1 className="text-[42px] leading-tight md:text-[72px] font-bold">
             I'm{" "}
             <span className="bg-[#FF6B7A] text-white px-3 py-1 inline-block">
               Shreyas
             </span>
-            , a passionate{" "}
-            <span className="bg-[#2F81F7] sm:text-[48px] text-white px-3 py-1 inline-block">
-              Software Developer
-            </span>
+            , a passionate
           </h1>
+          <div>
+            <span className="bg-[#2F81F7] text-white px-3 py-1 inline-block text-[32px] md:text-[48px]">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Software Developer",
+                    "UI/UX Engineer",
+                    "Full Stack Developer",
+                    "Software Engineer",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 60,
+                  deleteSpeed: 40,
+                }}
+              />
+            </span>
+          </div>
 
           <p className="text-[#393939] text-[16px] md:text-[18px] font-medium leading-7 md:leading-7.5 max-w-xl">
             Master's student at Indiana University in Computer Science with
@@ -32,7 +52,6 @@ export function HeroSection() {
 
         <div className="flex justify-center md:justify-end">
           <div className="relative w-full max-w-md aspect-square">
-            {/* Scribble frame */}
             <svg
               className="absolute -inset-4 w-[calc(100%+2rem)] h-[calc(100%+2rem)] -z-10"
               viewBox="0 0 400 400"
@@ -48,13 +67,11 @@ export function HeroSection() {
               />
             </svg>
             <div className="relative w-full h-full bg-[#FDB927] border-4 border-black rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <div className="relative w-full max-w-lg aspect-square border-4 border-black rounded-3xl overflow-hidden shadow-[-8px_8px_0px_0px_rgba(0,0,0,1)]">
-                <img
-                  src="/Personal.png"
-                  alt="Shreyas Dhekane"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <img
+                src="/Personal.png"
+                alt="Shreyas Dhekane"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

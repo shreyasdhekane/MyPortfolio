@@ -1,7 +1,8 @@
 "use client";
 
-import { Mail, ChevronDown } from "lucide-react";
+import { Mail, FolderOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 import { useCallback } from "react";
 
 export function Navigation() {
@@ -42,20 +43,36 @@ export function Navigation() {
             Portfolio
           </button>
         </div>
-
-        <Button
-          asChild
-          className="bg-black text-white hover:bg-black/90 rounded-sm px-5 h-12 min-w-48px shrink-0"
-        >
-          <a
-            href="https://www.linkedin.com/messaging/compose/?recipient=shreyasdhekane"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="flex items-center gap-4 ">
+          <Button
+            asChild
+            variant="outline"
+            className="bg-white border-[3px] border-black hover:bg-gray-50 rounded-sm px-5 h-12 shrink-0 font-semibold"
           >
-            <span className="hidden sm:inline-block mr-2">Contact</span>
-            <Mail className="w-10 h-10" strokeWidth={2.5} />
-          </a>
-        </Button>
+            <a
+              href="https://drive.google.com/drive/folders/16XM_kX4lLqWw5KdUTXwLIIzPvIySpHFz?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FolderOpen className="w-5 h-5" />
+              View Resume
+            </a>
+          </Button>
+
+          <Button
+            asChild
+            className="bg-black text-white hover:bg-black/90 rounded-sm px-5 h-12 min-w-48px shrink-0"
+          >
+            <a
+              href="https://www.linkedin.com/messaging/compose/?recipient=shreyasdhekane"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="hidden sm:inline-block mr-2">Contact</span>
+              <Mail className="w-10 h-10" strokeWidth={2.5} />
+            </a>
+          </Button>
+        </div>
       </nav>
     </div>
   );
