@@ -4,6 +4,16 @@ import { ArrowRight } from "lucide-react";
 export function PortfolioSection() {
   const projects = [
     {
+      title: "Pulsar – Real-Time API Monitoring Dashboard",
+      description:
+        " Built and deployed a full-stack API monitoring platform with JWT authentication, real-time WebSocket updates via SignalR, and a live world map visualizing global ping activity",
+      tag: "C#, .NET 10, ASP.NET Core, SignalR, PostgreSQL, Angular 17, Railway, Vercel",
+      logo: "/images/venture-logo.svg",
+      bgColor: "bg-[#FF6B7A]",
+      illustration: "/images/venture-workspace.svg",
+      link: "https://pulsar-bay.vercel.app",
+    },
+    {
       title: "TrackAdmin - Application Tracker",
       description:
         "Built and maintained a scalable full-stack application tracker using Next.js, Convex, and Clerk, supporting 30+ global users and processing 120+ applications across 150+ colleges. Reduced page load time by 20% and increased task completion efficiency by 35%.",
@@ -22,16 +32,6 @@ export function PortfolioSection() {
       bgColor: "bg-[#2F81F7]",
       illustration: "/images/venture-workspace.svg",
       link: "https://collabrix-one.vercel.app",
-    },
-    {
-      title: "Customer Dashboard Modernization",
-      description:
-        "Developed a modern single-page application using Angular with component-based architecture. Refactored legacy UI patterns into reusable components and implemented Angular routing, services, and data binding for scalable navigation.",
-      tag: "Angular / TypeScript",
-      logo: "/images/venture-logo.svg",
-      bgColor: "bg-[#FF6B7A]",
-      illustration: "/images/venture-workspace.svg",
-      link: "#",
     },
   ];
 
