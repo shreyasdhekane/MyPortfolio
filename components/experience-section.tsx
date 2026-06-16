@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 export function ExperienceSection() {
   const experiences = [
     {
-      period: "May 2024 - Aug 2024",
-      title: "UI/UX Designer Intern",
-      company: "Quetraware Technology",
+      period: "June 2026 - Present",
+      title: "Software Engineering Intern",
+      company: "Fastflo.AI",
       description:
-        "Developed responsive component-driven front-end interfaces using modern JavaScript frameworks. Collaborated with backend engineers to integrate APIs and services. Reduced design-to-development handoff time by 20% through standardized components and Git-based workflows.",
+        "Designing, developing, testing, and documenting software features across the front end and back end of the Fastflo platform. Building and maintaining APIs and integrations that support automated, multi-channel candidate messaging workflows;",
     },
   ];
 

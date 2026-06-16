@@ -13,7 +13,7 @@ export function HeroSection() {
           <div className="inline-flex items-center gap-2 bg-white border-[3px] border-black rounded-full px-4 py-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
             <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse shrink-0" />
             <span className="text-sm font-bold text-[#0B0B0B]">
-              Open to Summer 2026 Internships & Co-op
+              Software Engineer Intern @ Fastflo.AI
             </span>
           </div>
           <h1 className="text-[42px] leading-tight md:text-[72px] font-bold">
