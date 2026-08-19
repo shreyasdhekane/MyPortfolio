@@ -1,40 +1,47 @@
-import type React from "react";
-import type { Metadata } from "next";
+import type React from "react"
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
+import "./globals.css"
 
-import "./globals.css";
-
-import { Onest, Geist_Mono as V0_Font_Geist_Mono } from "next/font/google";
-
-// Initialize fonts
-const _geistMono = V0_Font_Geist_Mono({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
-
-// Initialize Onest font with weights 500 and 700
-const onest = Onest({
-  subsets: ["latin"],
-  weight: ["500", "700"],
-  variable: "--font-onest",
-});
+const _geist = Geist({ subsets: ["latin"] })
+const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Shreyas Dhekane",
-  description: "My landing page",
-};
+  title: "Shreyas Dhekane — Software Engineer",
+  description:
+    "Portfolio of Shreyas Dhekane, a full stack software engineer building scalable web applications with Next.js, React, and Angular.",
+  generator: "v0.app",
+  icons: {
+    icon: [
+      {
+        url: "/icon-light-32x32.png",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/icon-dark-32x32.png",
+        media: "(prefers-color-scheme: dark)",
+      },
+      {
+        url: "/icon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+    apple: "/apple-icon.png",
+  },
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${onest.variable} font-sans antialiased overflow-x-hidden`}
-      >
+    <html lang="en" className="bg-[#050505]">
+      <body className={`font-sans antialiased bg-[#050505]`}>
         {children}
+        <Analytics />
       </body>
     </html>
-  );
+  )
 }
