@@ -5,9 +5,9 @@ const projects = [
     title: "Pulsar",
     category: "API Monitoring Dashboard",
     description:
-      "Full-stack API monitoring platform with JWT auth, real-time WebSocket updates via SignalR, and a live world map of global ping activity. p50/p95/p99 latency charts, anomaly detection, and Claude AI-generated health summaries.",
+      "Real-time API monitoring platform streaming live health metrics over SignalR to an Angular dashboard. p50/p95/p99 latency tracking, anomaly detection on a rolling 24-hour baseline that cut false alerts by 45%, and Gemini-generated health summaries. Deployed on Azure App Service.",
     image: "/images/934shots_so.png",
-    stack: ["Angular 17", "TypeScript", ".NET 10", "SignalR", "PostgreSQL"],
+    stack: ["Angular", "C#", "ASP.NET Core", "SignalR", "PostgreSQL", "Azure"],
     href: "https://pulsar-bay.vercel.app",
   },
   {
@@ -21,11 +21,11 @@ const projects = [
   },
   {
     title: "Ryde",
-    category: "Ride-Hailing Rider App",
+    category: "Full-Stack Ride-Hailing App",
     description:
-      "A Lyft/Uber-style rider app built end to end — Expo & React Native on the front, Node, Express, Prisma and PostgreSQL on the back, with a live socket-driven ride simulation in between.",
+      "A full-stack ride-hailing platform — Expo & React Native on the front, Node, Express, Prisma and PostgreSQL on the back. Socket.IO powers driver matching, live location, and in-trip chat; fare tiers, promo codes, and saved cards cut booking steps by 52%.",
     image: "/images/115shots_so.png",
-    stack: ["Expo", "React Native", "Node.js", "Express", "Prisma", "PostgreSQL"],
+    stack: ["Expo", "React Native", "Node.js", "Socket.IO", "Prisma", "PostgreSQL"],
     href: "https://github.com/shreyasdhekane/ryde",
   },
 ]

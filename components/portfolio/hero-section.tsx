@@ -29,8 +29,8 @@ export function HeroSection() {
           </div>
           <div className="mt-6 bg-white/10 backdrop-blur-md border-t border-white/20 p-4 sm:p-5 rounded-2xl">
             <p className="text-sm sm:text-base font-medium opacity-90">
-              Master&apos;s student at Indiana University in Computer Science, building scalable web applications
-              with Next.js, React, and Angular — with a focus on clean APIs and thoughtful UI/UX.
+              Master&apos;s student at Indiana University in Computer Science, building full-stack and real-time
+              applications with React, Angular, ASP.NET Core, and Node.js — plus a custom C++ game engine on the side.
             </p>
           </div>
         </div>

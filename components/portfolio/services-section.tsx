@@ -8,7 +8,7 @@ const services = [
   },
   {
     title: "Full Stack Development",
-    description: "End-to-end apps with .NET, C#, Python, and SQL, integrating secure APIs and cloud services.",
+    description: "End-to-end apps with ASP.NET Core, C#, Node.js, and SQL, with REST APIs and real-time WebSockets.",
     icon: Database,
   },
   {
@@ -18,7 +18,7 @@ const services = [
   },
   {
     title: "Cloud Computing",
-    description: "Cloud-ready deployment on AWS and Vercel, with Convex, Clerk, and Supabase for scalable apps.",
+    description: "Cloud deployment on Azure App Service, AWS, and Vercel, with Supabase PostgreSQL and CI/CD.",
     icon: Cloud,
   },
   {
