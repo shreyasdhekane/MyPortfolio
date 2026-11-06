@@ -5,7 +5,7 @@ const background = [
     icon: GraduationCap,
     accent: "#6366F1",
     title: "Education",
-    body: "MS in Computer Science — Indiana University (CGPA 3.43/4). B.Tech Computer Science & Business Systems — D.Y. Patil University (CGPA 8.76/10).",
+    body: "MS in Computer Science — Indiana University (GPA 3.45/4). B.Tech Computer Science & Business Systems — D.Y. Patil University (CGPA 8.76/10).",
   },
   {
     icon: Trophy,

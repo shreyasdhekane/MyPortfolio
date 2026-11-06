@@ -2,11 +2,18 @@ import { FileText } from "lucide-react"
 
 const experiences = [
   {
+    period: "October 2026 — Present",
+    title: "Full Stack Web Developer Intern",
+    company: "IU School of Public Health",
+    description:
+      "Built a role-based React/TypeScript gift-card tracking app for 55 users across faculty, purchasing, and finance, replacing a manual spreadsheet-and-email process. Automated quarterly grant reconciliation with balanced journal entry files and print-ready disbursement logs, and built the API layer that unifies Denodo and SharePoint data for internal finance apps.",
+  },
+  {
     period: "June 2026 — August 2026",
-    title: "Software Engineering Intern",
+    title: "Software Engineer Intern",
     company: "Fastflo.AI",
     description:
-      "Designing, developing, testing, and documenting software features across the front end and back end of the Fastflo platform. Building and maintaining APIs and integrations that support automated, multi-channel candidate messaging workflows.",
+      "Shipped 8 full-stack features across 10 sprints with TypeScript, SQL, and WebSockets. Built REST APIs and Entity Framework/SQL integrations for automated multi-channel candidate messaging, and a global command palette with keyboard navigation and search that cut average navigation time by 65%.",
   },
 ]
 
@@ -23,7 +30,7 @@ export function ExperienceSection() {
           </h2>
           <p className="text-[#a1a1aa] mb-6 leading-relaxed text-sm sm:text-base">
             Computer Science graduate student at Indiana University with hands-on experience in full-stack
-            development, cloud computing, and UI/UX design.
+            development, real-time systems, and cloud deployment.
           </p>
           <a
             href="/ShreyasDhekane-resume.pdf"

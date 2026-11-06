@@ -14,9 +14,13 @@ import {
   SiJavascript,
   SiFlutter,
   SiTensorflow,
+  SiCplusplus,
+  SiPostgresql,
+  SiNodedotjs,
 } from "react-icons/si"
 
 const stack = [
+  { icon: SiCplusplus, name: "C++", color: "#00599C" },
   { icon: SiReact, name: "React", color: "#61DAFB" },
   { icon: SiNextdotjs, name: "Next.js", color: "#ffffff" },
   { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
@@ -28,6 +32,8 @@ const stack = [
   { icon: SiDocker, name: "Docker", color: "#2496ED" },
   { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
   { icon: SiDotnet, name: ".NET", color: "#8B5CF6" },
+  { icon: SiNodedotjs, name: "Node.js", color: "#5FA04E" },
+  { icon: SiPostgresql, name: "PostgreSQL", color: "#4169E1" },
   { icon: SiFlutter, name: "Flutter", color: "#02569B" },
   { icon: SiTensorflow, name: "TensorFlow", color: "#FF6F00" },
 ]
